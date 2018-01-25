@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script>
+                    function getDate() {
+                            document.getElementById("d1").innerHTML = new Date();
+                            document.getElementById("d2").innerHTML = new Date().toUTCString();
+                            document.getElementById("d3").innerHTML = new Date().toDateString();
+            
+                    }
+                    </script>
+    </head>
+    <body>
+        <h1>Dates</h1>
+
+        <button onclick="getDate()">Get Date</button>
+            <p id="d1"></p>
+            <p id="d2"></p>
+            <p id="d3"></p>
+            
+    </body>
+<html>

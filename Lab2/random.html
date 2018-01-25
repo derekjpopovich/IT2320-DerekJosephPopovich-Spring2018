@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Random Numbers</h1>
+            <p id="main"></p>
+            <script>
+                    var randomArray = new Array(100);
+                    var i;
+                    var text = "";
+                        for(i = 0; i < randomArray.length; i++){
+                            randomArray[i] = Math.random();
+                        }
+                        for (i = 0; i < randomArray.length; i++) { 
+                            text += randomArray[i] + "<br>";
+                        }            
+                    document.getElementById("main").innerHTML = text;
+                </script>            
+    </body>
+<html>
