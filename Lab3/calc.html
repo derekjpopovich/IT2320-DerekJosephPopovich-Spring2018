@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>Grocery List</title>
-
+    <style>
+      table, td {
+          border: 1px solid black;
+      }
+      </style>
   </head>
 
   <body>
@@ -11,12 +15,14 @@
   <h2>Add Item</h2>
   <form>
   <p>Description</p>
-  <input type="text" name="description" value="description">
+  <input type="text" id="description" value="description">
   <p>Amount</p>
-  <input type="text" name="amount" value="amount">
+  <input type="text" id="amount" value="amount">
   <input type="button" name="add" value="Submit" onclick="addTable()">
   </form>
-  <p id="table"> </p>
+
+  <table id="myTable"></table>
+
 	<h2>Grocery Cart</h2>
 	<h2>Total</h2>
 	<p id="total">Total: </p>
@@ -25,10 +31,25 @@
 
   <script>
     function addTable() {
-        document.getElementById("table").innerHTML = Date();
+	var a = document.getElementById("amount").value;
+        document.getElementById("total").innerHTML = "Total: " + a; 
+        var b = a * .08;
+        document.getElementById("tax").innerHTML = "Tax: " + b; 
+        var c = a + b;
+        document.getElementById("all").innerHTML = "Total with Tax: " + c; 
+        
+    	var first = document.getElementById("description").value;
+ 		var second = document.getElementById("amount").value; 
+        var table = document.getElementById("myTable");
+        var footer = table.createTFoot();
+        var row = footer.insertRow(0);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(0);
+        cell1.innerHTML = first;
+        cell2.innerHTML = second;
+        
     }
   </script>
-
 
   </body>
 
