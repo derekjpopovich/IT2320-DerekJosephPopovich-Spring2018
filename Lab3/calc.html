@@ -14,13 +14,21 @@
   <input type="text" name="description" value="description">
   <p>Amount</p>
   <input type="text" name="amount" value="amount">
-  <input type="submit" name="SubmitButton" value="Submit">
+  <input type="button" name="add" value="Submit" onclick="addTable()">
   </form>
+  <p id="table"> </p>
 	<h2>Grocery Cart</h2>
 	<h2>Total</h2>
 	<p id="total">Total: </p>
 	<p id="tax">Tax:  </p>
 	<p id="all">Total with Tax:  </p>
+
+  <script>
+    function addTable() {
+        document.getElementById("table").innerHTML = Date();
+    }
+  </script>
+
 
   </body>
 
