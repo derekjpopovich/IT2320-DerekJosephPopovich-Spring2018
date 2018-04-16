@@ -1,0 +1,20 @@
+<questions>
+	<question id=”2”>
+	<questiontext>Describe the purpose of AJAX. What advantage does AJAX provide over a traditional HTML form submit.</questiontext>
+	<answer id=”answer2”>Asynchronous JavaScript and XML allows a web application to send and received data from
+	a server asynchronously. Standard HTML pages load an entire page every time a page is requested, but AJAX allows
+	only parts of the data or page to be updated.</answer>
+	</question>
+</questions>
+<questions>
+	<question id=”3”>
+	<questiontext>Describe the role of JSON and XML with AJAX.</questiontext>
+	<answer id=”answer3”>JSON formatted data is used to pass AJAX updates between a client and server.</answer>
+	</question>
+</questions>
+<questions>
+	<question id=”4”>
+	<questiontext>If you had to choose just one, which would you choose: XML or JSON? Why?</questiontext>
+	<answer id=”answer4”>JSON, since JSON can use arrays and is faster to read/write.</answer>
+	</question>
+</questions>

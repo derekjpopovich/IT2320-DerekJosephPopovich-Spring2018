@@ -1,0 +1,20 @@
+<membership>
+	<level>1</level>
+	<type>seasonal</type>
+	<cost>35.00</cost>
+</membership>
+<membership>
+	<level>2</level>
+	<type>individual</type>
+	<cost>50.00</cost>
+</membership>
+<membership>
+	<level>3</level>
+	<type>family</type>
+	<cost>65.00</cost>
+</membership>
+<membership>
+	<level>4</level>
+	<type>contributing</type>
+	<cost>70.00</cost>
+</membership>
